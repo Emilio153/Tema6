@@ -6,7 +6,7 @@ public class CuentaCorriente {
 	String titular;
 	double saldo;	
 	
-	public CuentaCorriente(String dni, String titular) {
+	public CuentaCorriente(String dni, String titular){
 		if(dni == null || dni.length() != 9) {
 			throw new IllegalArgumentException("El DNI no es válido. Debe tener 9 caracteres. ");
 		}
@@ -56,19 +56,5 @@ public class CuentaCorriente {
 		System.out.println("Titular: " + this.titular);
 		System.out.printf("Saldo: %.2f € \n", this.saldo);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }
